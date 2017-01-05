@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Google Front end Clone</title>
+</head>
+
+<body>
+
+<div id="view">
+    <section id="top">
+        <nav>
+            <ul>
+                <li><a href="#">+You</a></li>
+                <li><a href="https://mail.google.com/">Gmail</a></li>
+                <li><a href="https://www.google.co.in/imghp?hl=en&tab=wi&ei=215uWOPlDYn9vgSS6Jlg&ved=0EKouCBQoAQhttps://www.google.co.in/intl/en/ads/?fg=1https://www.google.co.in/services/?fg=1#?modal_active=nonehttps://www.google.co.in/intl/en/about/https://www.google.co.in/intl/en/policies/privacy/?fg=1https://www.google.co.in/preferences?hl=en">Images</a></li>
+                <li><img src="grid.png" class="grid" /></li>
+                <li class="button" style="color: white;"><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="logo">
+        <header>
+            <img src="google-logo.png" />
+        </header>
+    </section>
+
+    <section id="search">
+        <form action="https://www.google.com" method="GET">
+            <fieldset>
+                <legend>Query</legend>
+                <label for="query">Query</label>
+                <input type="text" name="query" id="query" />
+            </fieldset>
+            <fieldset>
+                <legend>Submit</legend>
+                <input type="submit" name="search" id="search" value="Google Search" />
+                <input type="submit" name="lucky" id="lucky" value="I'm Feeling Lucky" />
+            </fieldset>
+        </form>
+    </section>
+
+    <section id="note">
+        <span class="link"><a href="https://www.google.com">Not Affiliated With Google</span> .
+    </section>
+</div>
+
+<section id="bottom">
+    <footer>
+        <div class="left">
+            <nav>
+                <ul>
+                    <li><a href="https://www.google.co.in/intl/en/ads/?fg=1https://www.google.co.in/services/?fg=1#?modal_active=nonehttps://www.google.co.in/intl/en/about/https://www.google.co.in/intl/en/policies/privacy/?fg=1https://www.google.co.in/preferences?hl=en    target="_blank">Advertising</a></li>
+                    <li><a href="https://www.google.co.in/services/?fg=1#?modal_active=nonehttps://www.google.co.in/intl/en/about/https://www.google.co.in/intl/en/policies/privacy/?fg=1https://www.google.co.in/preferences?hl=en">Business</a></li>
+                    <li><a href="https://www.google.co.in/intl/en/about/https://www.google.co.in/intl/en/policies/privacy/?fg=1https://www.google.co.in/preferences?hl=en">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li><a href="https://www.google.co.in/intl/en/policies/privacy/?fg=1https://www.google.co.in/preferences?hl=en">Privacy &amp; Terms</a></li>
+                    <li><a href="https://www.google.co.in/preferences?hl=en">Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </footer>
+</section>
+
+    <script>
+      var form = document.querySelector('form');
+      var input = document.getElementById('field');
+
+      form.addEventListener('submit', function(ev) {
+        ev.preventDefault();
+
+        var redirect = 'https://google.com/' + input.value;
+
+        window.location = redirect;
+      });
+
+</body>
+</html>
