@@ -133,7 +133,7 @@ section {
 }
 
 #search input[type=text] {
-    background: url('microphone.jpg') right no-repeat;
+    background: url('microphone.png') right no-repeat;
     background-size: 24px;
     width: 500px;
     border: 1px solid #ddd;
